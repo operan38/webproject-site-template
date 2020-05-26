@@ -1,0 +1,23 @@
+@import '../css/normalize';
+
+@import 'mixins';
+@import 'fonts';
+
+@import 'bootstrap/bootstrap-grid.scss';
+@import 'font-awesome/font-awesome.scss';
+@import '../css/aos';
+@import '../css/baguetteBox.min';
+
+//
+
+body {
+  font-family: 'Open-Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+@import 'header';
+
+@import 'content';
+
+@import 'footer';

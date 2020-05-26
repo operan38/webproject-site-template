@@ -1,0 +1,35 @@
+.center {
+  background: url('../img/center/center-bg.jpg') no-repeat;
+  background-size: cover;
+  width: 100%;
+  padding-top: 180px;
+  height: 655px;
+}
+
+.center__body {
+  max-width: 824px;
+  margin: 0 auto;
+}
+
+.center__title {
+  color: #fff;
+  font-size: 60px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.center__subtitle {
+  color: #fff;
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.center__btns {
+  display: flex;
+  justify-content: center;
+
+  a {
+    margin: 0 15px;
+  }
+}
