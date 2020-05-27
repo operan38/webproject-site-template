@@ -1,7 +1,21 @@
+// -- components
+
 @import 'components/_button.scss';
+@import 'components/_headline.scss';
+
+// --
+
+// -- containers
 
 @import 'containers/_center.scss';
 @import 'containers/_about-us.scss';
+@import 'containers/_our-services.scss';
+@import 'containers/_latest-works.scss';
+@import 'containers/_pricing-plan.scss';
+@import 'containers/_blog.scss';
+@import 'containers/_contact-us.scss';
+
+// --
 
 .section-container {
   max-width: 1170px;

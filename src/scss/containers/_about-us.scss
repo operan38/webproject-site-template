@@ -1,2 +1,42 @@
 .about-us {
+  padding: 121px 122px;
+
+  &__body {
+  }
+
+  &__row-about-info {
+    max-width: 630px;
+    margin: 0 auto 120px auto;
+  }
+
+  &__title {
+  }
+
+  &__subtitle {
+  }
+
+  &__row-about-list {
+    text-align: center;
+  }
+
+  &__col-about-list {
+  }
+
+  &__about-list-img {
+  }
+
+  &__about-list-title {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.1;
+    text-align: center;
+    letter-spacing: 1px;
+  }
+
+  &__about-list-subtitle {
+    font-size: 15px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 1px;
+  }
 }
