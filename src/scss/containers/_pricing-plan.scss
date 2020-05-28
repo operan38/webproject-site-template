@@ -1,5 +1,5 @@
 .pricing-plan {
-  padding: 70px 0;
+  padding: 70px 0 40px 0;
   background: #f0f1f1;
 
   &__body {
@@ -7,7 +7,7 @@
 
   &__row-pricing-plan-info {
     max-width: 630px;
-    margin: 0 auto 120px auto;
+    margin: 0 auto 100px auto;
   }
 
   &__title {
@@ -25,6 +25,7 @@
   &__card {
     background: #fff;
     padding-bottom: 50px;
+    margin-bottom: 30px;
   }
 
   &__card-top {
@@ -92,7 +93,7 @@
 
     ul {
       list-style: none;
-      padding: 0;
+      padding: 20px 0 0 0;
 
       li {
         font-weight: 300;

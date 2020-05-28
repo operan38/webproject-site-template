@@ -1,7 +1,10 @@
 @include font('fontawesome', 'fontawesome-webfont', '400', 'normal');
-/*@include font('OpenSans', 'OpenSans-Regular', '400', 'normal');
+@include font('OpenSans', 'OpenSans-Regular', '400', 'normal');
 @include font('OpenSans', 'OpenSans-SemiBold', '600', 'normal');
-@include font('OpenSans', 'OpenSans-Bold', '700', 'normal');*/
+@include font('OpenSans', 'OpenSans-Bold', '700', 'normal');
+@include font('Roboto', 'Roboto-Bold', '700', 'normal');
+@include font('Roboto', 'Roboto-Regular', '400', 'normal');
+@include font('Roboto', 'Roboto-Medium', '500', 'normal');
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');*/
