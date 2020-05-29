@@ -44,9 +44,10 @@ $(document).ready(() => {
 	});
 
 	$('.js-latest-works-slider').owlCarousel({
-		loop: true,
+		loop: false,
 		responsiveClass: true,
 		margin: 0,
+		autoHeight: true,
 		responsive: {
 			0: {
 				items: 2,
