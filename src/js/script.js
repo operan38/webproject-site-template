@@ -3,27 +3,65 @@ $(document).ready(() => {
 
 	$('.js-header__toggle').on('click', () => {
 		$('.js-header__toggle, .js-header__nav').toggleClass('active');
-		$('html, body').toggleClass('lock');
+		$('body').toggleClass('lock');
 	});
 
-	/* $(document).on('scroll', () => {
-		let isStickyHeader = false;
+	$(window).on('scroll', function () {
+		const headerHeight = $('.header').outerHeight();
+		const scrollPos = $(this).scrollTop();
 
-		if ($(window).scrollTop() >= $('.header').outerHeight() + 20 && !isStickyHeader) {
-			$('.header').css('top', '-100px');
-			$('.header').css('position', 'fixed');
-			$('.header').css('width', '100%');
+		if ($(window).width() > 992) {
+			$('section').each(function () {
+				const top = $(this).offset().top - headerHeight;
+				const bottom = top + $(this).outerHeight();
 
-			$('.header').stop();
+				if (scrollPos >= top && scrollPos <= bottom) {
+					$('.header__nav-link').removeClass('active');
+					$('section').removeClass('active');
 
-			$('.header').animate({
-				top: '0px',
-			}, 400, 'linear', () => {});
-
-			isStickyHeader = true;
-		} else {
-			$('.header').removeAttr('style');
-			isStickyHeader = false;
+					$(this).addClass('active');
+					$(`.header__nav-link[href="#${$(this).attr('id')}"]`).addClass('active');
+				}
+			});
 		}
-	}); */
+	});
+
+	$('.go-to-link').on('click', function () {
+		const $el = $(this);
+		const id = $el.attr('href');
+		const headerHeight = $('.header').outerHeight();
+
+		if ($(window).width() <= 992) {
+			$('.js-header__toggle, .js-header__nav').removeClass('active');
+			$('body').removeClass('lock');
+		}
+
+		$('html, body').animate({
+			scrollTop: $(id).offset().top - headerHeight,
+		}, 500);
+	});
+
+	$('.js-latest-works-slider').owlCarousel({
+		loop: true,
+		responsiveClass: true,
+		margin: 0,
+		responsive: {
+			0: {
+				items: 2,
+			},
+			768: {
+				items: 3,
+			},
+		},
+	});
+
+	$('.js-latest-works-slider').fancybox({
+		selector: '.owl-item:not(.cloned) a',
+		hash: false,
+		buttons: [
+			'close',
+		],
+	});
+
+	$(window).scroll();
 });

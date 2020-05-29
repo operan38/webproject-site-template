@@ -23,6 +23,7 @@
     height: 106px;
     background: #3949ab;
     border-radius: 50%;
+    margin-bottom: 10px;
 
     img {
       padding-top: 22px;
@@ -38,5 +39,26 @@
     font-weight: 600;
     letter-spacing: 1px;
     line-height: 1.5;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .contact-us {
+    &__row-contact-info {
+      max-width: 100%;
+      padding: 40px 0;
+    }
+
+    &__contact-list-title {
+      font-size: 16px;
+    }
+
+    &__contact-list-cnt {
+      margin-bottom: 30px;
+    }
+
+    &__row-contact-list {
+      padding-bottom: 20px;
+    }
   }
 }

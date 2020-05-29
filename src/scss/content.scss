@@ -21,3 +21,11 @@
   max-width: 1170px;
   margin: 0 auto;
 }
+
+.content {
+  padding-top: 85px;
+
+  @include media-breakpoint-down(md) {
+    padding-top: 40px;
+  }
+}

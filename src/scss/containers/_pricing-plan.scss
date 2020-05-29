@@ -2,30 +2,17 @@
   padding: 70px 0 40px 0;
   background: #f0f1f1;
 
-  &__body {
-  }
-
   &__row-pricing-plan-info {
     max-width: 630px;
     margin: 0 auto 100px auto;
   }
 
-  &__title {
-  }
-
-  &__subtitle {
-  }
-
-  &__row-pricing-list {
-  }
-
-  &__col-pricing-list {
-  }
-
   &__card {
     background: #fff;
     padding-bottom: 50px;
-    margin-bottom: 30px;
+    box-shadow: 0 6px 4px -4px rgba(0, 0, 0, 0.2);
+    max-width: 360px;
+    margin: 0 auto 30px auto;
   }
 
   &__card-top {
@@ -119,6 +106,33 @@
       background: #00897b;
       color: #fff;
       border: 3px solid #fff;
+    }
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .pricing-plan {
+    &__card-middle {
+      padding: 0 65px;
+    }
+
+    &__card-bottom {
+      padding: 0 65px;
+    }
+
+    &__card-btn {
+      width: 100%;
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .pricing-plan {
+    padding: 30px 0 20px 0;
+
+    &__row-pricing-plan-info {
+      max-width: 100%;
+      margin: 0 auto 40px auto;
     }
   }
 }

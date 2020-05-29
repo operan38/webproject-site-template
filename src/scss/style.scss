@@ -1,4 +1,4 @@
-@import '../css/normalize';
+@import 'reset';
 
 @import 'mixins';
 @import 'fonts';
@@ -6,7 +6,10 @@
 @import 'bootstrap/bootstrap-grid.scss';
 @import 'font-awesome/font-awesome.scss';
 @import '../css/aos';
-@import '../css/baguetteBox.min';
+
+@import '../css/owl-carousel/owl.carousel.min.css';
+@import '../css/owl-carousel/owl.theme.default.min.css';
+@import '../css/jquery.fancybox.min.css';
 
 //
 

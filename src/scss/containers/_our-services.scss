@@ -1,25 +1,11 @@
 .our-services {
   padding: 70px 0 40px 0;
   background: #e4fdf9;
-
-  &__body {
-  }
+  overflow: hidden;
 
   &__row-our-services-info {
     max-width: 630px;
     margin: 0 auto 100px auto;
-  }
-
-  &__title {
-  }
-
-  &__subtitle {
-  }
-
-  &__row-services-list {
-  }
-
-  &__col-services-list {
   }
 
   &__card {
@@ -27,6 +13,7 @@
     text-align: center;
     padding: 50px;
     margin-bottom: 30px;
+    box-shadow: 0 6px 4px -4px rgba(0, 0, 0, 0.2);
   }
 
   &__card-img {
@@ -54,6 +41,17 @@
       background: #00897b;
       color: #fff;
       border: 3px solid #fff;
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .our-services {
+    padding: 30px 0 0px 0;
+
+    &__row-our-services-info {
+      max-width: auto;
+      margin: 0 auto 40px auto;
     }
   }
 }

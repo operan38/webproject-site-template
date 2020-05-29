@@ -1,28 +1,21 @@
 .about-us {
-  padding: 70px 0;
-
-  &__body {
-  }
+  padding: 70px 0 40px 0;
 
   &__row-about-info {
     max-width: 630px;
     margin: 0 auto 100px auto;
   }
 
-  &__title {
-  }
-
-  &__subtitle {
-  }
-
   &__row-about-list {
     text-align: center;
   }
 
-  &__col-about-list {
+  &__about-list-cnt {
+    margin-bottom: 30px;
   }
 
   &__about-list-img {
+    margin-bottom: 10px;
   }
 
   &__about-list-title {
@@ -31,6 +24,7 @@
     line-height: 1.1;
     text-align: center;
     letter-spacing: 1px;
+    margin-bottom: 10px;
   }
 
   &__about-list-subtitle {
@@ -38,5 +32,20 @@
     line-height: 1.5;
     text-align: center;
     letter-spacing: 1px;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .about-us {
+    padding: 30px 0 0px 0;
+
+    &__row-about-info {
+      max-width: auto;
+      margin: 0 auto 40px auto;
+    }
+
+    &__about-list-title {
+      font-size: 18px;
+    }
   }
 }

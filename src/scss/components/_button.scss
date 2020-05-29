@@ -55,3 +55,14 @@
     color: #fff;
   }
 }
+
+@include media-breakpoint-down(md) {
+  .btn-transparent,
+  .btn-green {
+    min-width: auto;
+    padding: 16px 16px;
+    line-height: 1;
+    letter-spacing: 1px;
+    font-size: 15px;
+  }
+}
