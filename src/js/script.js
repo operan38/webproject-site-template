@@ -47,7 +47,6 @@ $(document).ready(() => {
 		loop: false,
 		responsiveClass: true,
 		margin: 0,
-		autoHeight: true,
 		responsive: {
 			0: {
 				items: 2,
