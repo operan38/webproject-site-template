@@ -1,5 +1,5 @@
 .blog {
-  background: #e4fdf9;
+  background: #fff;
   padding: 70px 0 0 0;
 
   &__row-blog-info {
@@ -36,6 +36,7 @@
 
   &__blog-list-subtitle {
     font-size: 15px;
+    line-height: 1.2;
     font-weight: 400;
   }
 
