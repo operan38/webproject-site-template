@@ -1,5 +1,7 @@
 $(document).ready(() => {
-	AOS.init();
+	AOS.init({
+		disable: 'phone',
+	});
 
 	$('.js-header__toggle').on('click', () => {
 		$('.js-header__toggle, .js-header__nav').toggleClass('active');
@@ -55,9 +57,8 @@ $(document).ready(() => {
 		},
 	});
 
-	$('.js-latest-works-slider').fancybox({
-		selector: '.owl-item:not(.cloned) a',
-		hash: false,
+	$().fancybox({
+		selector: '.owl-item:not(.cloned) .latest-works__slider-item a',
 		buttons: [
 			'close',
 		],
